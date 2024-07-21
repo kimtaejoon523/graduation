@@ -1,11 +1,10 @@
 import smbus2
 import time
 
-# I2C 버스 초기화
 bus = smbus2.SMBus(1)
 address = 0x48  # ADC I2C 주소 (예: ADS1115)
 
-# ADS1115 레지스터 주소
+
 CONFIG_REGISTER = 0x01
 CONVERSION_REGISTER = 0x00
 
